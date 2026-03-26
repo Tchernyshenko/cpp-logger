@@ -23,7 +23,7 @@ target_link_libraries(your_target PRIVATE cpp_logger)
 include(FetchContent)
 FetchContent_Declare(
   cpp_logger
-  GIT_REPOSITORY https://github.com/ВАШ_НИК/cpp-logger.git
+  GIT_REPOSITORY git@github.com:Tchernyshenko/cpp-logger.git
   GIT_TAG        v1.0.0
 )
 FetchContent_MakeAvailable(cpp_logger)
@@ -34,7 +34,7 @@ FetchContent_MakeAvailable(cpp_logger)
 #include <logger/logger.hpp>
 
 SHOW_INFO("App", "Hello World");
-logger::Logger::set_output_file("log.txt");
+logger::Logger::setOutputFile("log.txt");
 SHOW_ERROR("Net", "Connection lost");
 ```
 
